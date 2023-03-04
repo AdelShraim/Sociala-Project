@@ -1,0 +1,16 @@
+.form-wrapper{
+    min-width: 350px;
+    max-width: 400px;
+}
+input {
+    outline: none;
+}
+.input-holder{
+    border: 1px solid var(--text-gray-888);
+    margin-bottom: 15px;
+}
+.input-holder:focus-within{
+    border-color: blue;
+    border-width: 3px;
+
+}

@@ -1,0 +1,148 @@
+:root {
+    --bs-success-rgb:16, 216, 118;
+    --bs-primary-rgb:30, 116, 253;
+    --bg-warning-rgb:254, 148, 49;
+    --bg-gray: #EEEEEE;
+    --text-gray:#abd5bd;
+    --bg-active-link:#02E3FF;
+    --text-gray-888:#888;
+    --theme-color: #05f;
+    --theme-color-rgb: 33,150,243;
+    --theme-color-shade: #09f;
+    --theme-color-tint: #1E74FD;
+    --facebook-bg :#3B5999  ;
+}
+
+
+@font-face {
+    font-family: fredokaOne;
+    src: url(../Fonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family:Montserrat ;
+    src: url(../Fonts/Dosis\,Fredoka_One\,Montserrat\,Roboto/Montserrat\Montserrat-VariableFont_wght.ttf);
+}
+
+.fredoka-font {
+    font-family: fredokaOne;
+}
+body {
+    font-family: Montserrat;
+   
+}
+.facebook-bg{
+    background-color: var(--facebook-bg);
+}
+.bg-gray {
+background-color: var(--bg-gray);
+}
+.text-gray{
+    color: var(--text-gray);
+}
+.text-gray-888{
+    color: var(--text-gray-888);
+}
+.bg-blue-gradiant {
+    background: linear-gradient(to right,#0575e6,#021b79)!important;
+}
+.bg-red-gradiant {
+    background: linear-gradient(to right,#e44d26,#f16529)!important;
+}
+.bg-gold-gradiant {
+    background: linear-gradient(to right,#f2994a,#f2c94c)!important;
+}
+.bg-mini-gradiant {
+    background: linear-gradient(to right,#ee0979,#ff6a00)!important;
+}
+.bg-warning {
+    background-color: #fe9431!important;
+}
+.shadow-xss {
+    box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
+}
+.bg-primary-gradiant {
+    background: linear-gradient(135deg,var(--theme-color),var(--theme-color-shade))!important;
+}
+
+
+/* Animations */
+@keyframes infinteRotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.infinte-rotate {
+    animation: 4s linear infinite infinteRotate;
+}
+
+.w35 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.w20{
+    width: 20px;
+}
+.center-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Scroll Style */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 5px;
+}
+
+.rounded-xxl{
+    border-radius: 15px !important;
+
+}
+.font-xs{
+font-size: 14px;
+}
+
+.font-xxs{
+    font-size: 12px;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+.w50 {
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.img-overlay{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0,0,0,.6);
+
+}

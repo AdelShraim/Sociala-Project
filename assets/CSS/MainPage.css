@@ -1,0 +1,132 @@
+.sidebar ,
+.chat-contact{
+width: 260px;
+height: 100vh;
+overflow-y: auto;
+padding-bottom: 15px;
+}
+
+.main-content{
+    padding-left: 260px ;
+    padding-right: 260px ;
+    transition: 0.5s;
+}
+
+.chat-contact{
+    top: 0 ;
+    right: 0 ;
+    transition: 0.5s;
+    
+    
+   
+}
+
+.chat-contact.active{
+    right: -260px ;
+}
+.main-content.active-chat{
+    padding-right: 0 !important;
+}
+
+
+.contant-card li.item h3 {
+    font-size: 14px;
+    color: var(--text-gray-888);
+}
+
+
+/*  Stories style */
+
+.owl-item {
+    border-radius: 15px;
+    height: 200px;
+    width: 140px;
+   
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.stories-carousel .owl-item .contentt {
+    width: 140px;
+    z-index: 1;
+    margin-left: 20px;
+    
+}
+.stories-carousel .owl-item:not(:first-child):after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(4,3,0,0) 100%);
+}
+.stories-carousel .owl-item:nth-child(1) {
+    background-color: var(--text-gray-888);
+}
+
+.owl-stage {
+    width: max-content !important; 
+}
+
+
+/* Live section */
+.lives-carousel .owl-item .top-section {
+height: 30%;
+
+}
+.lives-carousel .owl-item .top-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    }
+.lives-carousel .owl-item .bottom-section .user-img{
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lives-carousel .owl-item,
+.follows-carousel .owl-item {
+    box-shadow: 0 8px 30px rgba(0,0,0,.05)!important;
+}
+
+
+/* Loader Screen */
+
+.dots {
+    width: 56px;
+    height: 26.9px;
+    background: radial-gradient(circle closest-side,#474bff 90%,#0000) 0%   50%,
+           radial-gradient(circle closest-side,#474bff 90%,#0000) 50%  50%,
+           radial-gradient(circle closest-side,#474bff 90%,#0000) 100% 50%;
+    background-size: calc(100%/3) 13.4px;
+    background-repeat: no-repeat;
+    animation: dots-7ar3yq 1s infinite linear;
+ }
+ 
+ @keyframes dots-7ar3yq {
+    20% {
+       background-position: 0%   0%, 50%  50%,100%  50%;
+    }
+ 
+    40% {
+       background-position: 0% 100%, 50%   0%,100%  50%;
+    }
+ 
+    60% {
+       background-position: 0%  50%, 50% 100%,100%   0%;
+    }
+ 
+    80% {
+       background-position: 0%  50%, 50%  50%,100% 100%;
+    }
+ }
+
+
+
+
+
+
