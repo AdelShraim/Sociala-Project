@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="vendor/CSS/bootstrap.min.css" />
+
+    <!-- fontawsome-->
+    <link rel="stylesheet" href="vendor/CSS/all.min.css" />
+
+    <!-- owl courosel -->
+    <link rel="stylesheet" href="vendor/CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendor/CSS/owl.theme.default.min.css" />
+
+    <!--LightBox Coustmize-->
+    <link rel="stylesheet" href="vendor/CSS/lightbox.min.css" />
+
+    <!--Style.css-->
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="assets/CSS/NavBar.css" />
+    <link rel="stylesheet" href="assets/CSS/MainPage.css" />
+    <link rel="stylesheet" href="assets/CSS/login.css" />
+  </head>
+  <body>
+   <!--Start NavBar-->
+   <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <div class="container-fluid justify-content-start">
+      <a class="navbar-brand fredoka-font" href="index.html">
+        <i class="fa-solid fa-bolt text-success"></i>
+
+        <span class="text-primary"> Sociala </span></a
+      >
+
+      <div
+        class="second-list d-none d-lg-block ms-auto"
+        id="navbarSupportedContent"
+      >
+        <div class="d-flex">
+          <!-- Login Button trigger modal -->
+          <button
+            type="button"
+            class="btn bg-black rounded-pill p-3 text-white me-3 "
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+           <!-- Rigister Button trigger modal -->
+           <button
+           type="button"
+           class="btn bg-primary rounded-pill p-3 text-white "
+           data-bs-toggle="modal"
+           data-bs-target="#registerModal"
+         >
+           Register
+         </button>
+        </div>
+      </div>
+
+      <div
+        class="third-list d-block d-lg-none ms-auto"
+        id="navbarSupportedContent"
+      >
+        <ul
+          class="list-unstyled me-auto mb-2 mb-lg-0 d-flex align-items-center"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="fa-solid fa-comment"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="fa-solid fa-video"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button
+                class="offvanva-btn border-0 position-relative"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              ></button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--login Modal -->
+<div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-3">
+        <div class="">
+          <h2 class="fw-bolder"> Login into <br> your account </h2>
+          <form class="py-3">
+              <div class="input-holder d-flex align-items-center p-3 rounded">
+                  <i class="fa-regular fa-envelope text-gray pe-3 fs-4"></i>
+                  <input type="email" placeholder="Your Email address .. " class="bg-transparent border-0 shadow-none">
+
+              </div>
+              <div class="input-holder d-flex align-items-center p-3 rounded">
+                  <i class="fa-solid fa-lock text-gray pe-3 fs-4"></i>
+                  <input type="password" placeholder="Your Password .. " class="bg-transparent border-0 shadow-none">
+
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+                        Remember me
+                      </label>
+                    </div>
+                    <a href="#" class="text-black font-xs fw-600">forget your password ?</a>
+
+
+
+              </div>
+              <button class="btn bg-black text-white w-100 py-3 mt-2">Login</button>
+
+
+          </form>
+          <p class="text-gray fw-600">Don't have account ? <a href="register.html" class="text-primary fw-bolder">Register</a></p>
+
+          <div class="text-center text-gray fw-600 font-xs">
+              <p>Or , sign with your Social account : </p>
+              <a href="#" class="bg-primary w-100 d-flex align-items-center rounded mb-2 p-2 text-white">
+                  <img src="assets/IMG/Login/icon-1.png">
+                  <span class="ps-4 text-capitalize">Sign in with Google</span>
+              </a>
+              <a href="#" class="facebook-bg w-100 d-flex align-items-center rounded mb-2 p-2 text-white">
+                  <img src="assets/IMG/Login/icon-3.png">
+                  <span class="ps-4 text-capitalize">Sign in with facebook</span>
+              </a>
+          </div>
+      </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+ <!--Register Modal -->
+<div class="modal fade " id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body p-3">
+          <div class="">
+            <h2 class="fw-bolder"> Create <br> your account </h2>
+            <form class="py-3">
+              <div class="input-holder d-flex align-items-center p-3 rounded">
+                <i class="fa-solid fa-user text-gray pe-3 fs-4"></i>
+                  <input type="text" placeholder="Your Name.. " class="bg-transparent border-0 shadow-none">
+
+              </div>
+              <div class="input-holder d-flex align-items-center p-3 rounded">
+                <i class="fa-regular fa-envelope text-gray pe-3 fs-4"></i>
+                <input type="email" placeholder="Your Email address .. " class="bg-transparent border-0 shadow-none">
+
+            </div>
+               
+                <div class="input-holder d-flex align-items-center p-3 rounded">
+                    <i class="fa-solid fa-lock text-gray pe-3 fs-4"></i>
+                    <input type="password" placeholder="Your Password .. " class="bg-transparent border-0 shadow-none">
+
+                </div>
+                <div class="input-holder d-flex align-items-center p-3 rounded">
+                  <i class="fa-solid fa-lock text-gray pe-3 fs-4"></i>
+                  <input type="password" placeholder=" Confirm Your Password .. " class="bg-transparent border-0 shadow-none">
+
+              </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+                          Accept Term and Conditions
+                        </label>
+                      </div>
+                      
+
+
+
+                </div>
+                <button class="btn bg-black text-white w-100 py-3 mt-2">Register</button>
+
+
+            </form>
+            <p class="text-gray fw-600">Already have account ? 
+              <a href="login.html" class="text-primary fw-bolder">Login</a></p>
+
+            <div class="text-center text-gray fw-600 font-xs">
+                <p>Or , sign with your Social account : </p>
+                <a href="#" class="bg-primary w-100 d-flex align-items-center rounded mb-2 p-2 text-white">
+                    <img src="assets/IMG/Login/icon-1.png">
+                    <span class="ps-4 text-capitalize">Sign in with Google</span>
+                </a>
+                <a href="#" class="facebook-bg w-100 d-flex align-items-center rounded mb-2 p-2 text-white">
+                    <img src="assets/IMG/Login/icon-3.png">
+                    <span class="ps-4 text-capitalize">Sign in with facebook</span>
+                </a>
+            </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ <!--End NavBar-->
+
+  <section>
+    <div class="row g-0" style="height: 100vh;">
+        <div class=" d-none d-xl-block col-5 ">
+            <img src="assets/IMG/Login/login-bg.jpg" class="w-100 h-100">
+            
+        </div>
+        <div class="col-xl-7 ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="form-wrapper">
+                  <div class="">
+                    <h2 class="fw-bolder"> Create <br> your account </h2>
+                    <form class="py-3">
+                      <div class="input-holder d-flex align-items-center p-3 rounded">
+                        <i class="fa-solid fa-user text-gray pe-3 fs-4"></i>
+                          <input type="text" placeholder="Your Name.. " class="bg-transparent border-0 shadow-none">
+      
+                      </div>
+                      <div class="input-holder d-flex align-items-center p-3 rounded">
+                        <i class="fa-regular fa-envelope text-gray pe-3 fs-4"></i>
+                        <input type="email" placeholder="Your Email address .. " class="bg-transparent border-0 shadow-none">
+      
+                    </div>
+                       
+                        <div class="input-holder d-flex align-items-center p-3 rounded">
+                            <i class="fa-solid fa-lock text-gray pe-3 fs-4"></i>
+                            <input type="password" placeholder="Your Password .. " class="bg-transparent border-0 shadow-none">
+        
+                        </div>
+                        <div class="input-holder d-flex align-items-center p-3 rounded">
+                          <i class="fa-solid fa-lock text-gray pe-3 fs-4"></i>
+                          <input type="password" placeholder=" Confirm Your Password .. " class="bg-transparent border-0 shadow-none">
+      
+                      </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+                                  Accept Term and Conditions
+                                </label>
+                              </div>
+                              
+        
+        
+        
+                        </div>
+                        <button class="btn bg-black text-white w-100 py-3 mt-2">Register</button>
+        
+        
+                    </form>
+                    <p class="text-gray fw-600">Already have account ? 
+                      <a href="login.html" class="text-primary fw-bolder">Login</a></p>
+        
+                    
+                </div>
+
+            </div>
+           
+            
+
+        </div>
+    </div>
+  </section>
+
+   
+
+    <!--Bootstrap-->
+    <script src="vendor/JS/bootstrap.min.js"></script>
+    <!--JQuery-->
+    <script src="vendor/JS/jquery-3.6.3.min.js"></script>
+    <!--LightBox JS-->
+    <script src="vendor/JS/lightbox.min.js"></script>
+
+    <!--owl coursel-->
+    <script src="vendor/JS/owl.carousel.min.js"></script>
+    <!--JavaScript-->
+    <script src="assets/JS/main.js"></script>
+  </body>
+</html>
